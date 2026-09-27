@@ -27,3 +27,27 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+## Stage 1
+
+2026-09-27 Entry
+
+This week I learned a few techniques to improve the reproducibility of my 
+data analysis.
+
+1. Don't use machine-specific directories in my programming.
+
+  When I need to use a file for my data analysis, the file is normally stored in 
+  a digital "folder", and this "folder" is stored in my computer's storage. My
+  computer's name will be different from the name of other people's computer so 
+  if I were to write some programming that referred to a location in my computer, 
+  the programming would not achieve the same result or cause an error if someone
+  else were to run that program. 
+  
+  Instead, I can use a project file that is affiliated with a particular folder 
+  that contains all the files associated with a data analysis. Then I can use
+  the here() function to create objects that are associated with folders in the
+  project. If someone obtains a copy of my repository, they will be able to 
+  create that same object because the project will have the same name and the 
+  folders in the project will have the same name. 
