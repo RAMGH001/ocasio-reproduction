@@ -51,3 +51,11 @@ data analysis.
   project. If someone obtains a copy of my repository, they will be able to 
   create that same object because the project will have the same name and the 
   folders in the project will have the same name. 
+  
+2. Use the renv package.
+  The renv package does a few things. It creates a file that contains information
+  about the version of all the packages that are being used in a project. The 
+  second thing I can do with the renv package is to create separate lists of 
+  packages for a project. That means I can use one version of a package for one 
+  project and possibly use a different version of the same package for another
+  project. 
